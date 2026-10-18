@@ -7,7 +7,9 @@
 ## Overview
 
 The 4–20 mA Cube is a compact, wireless instrumentation module in the Blinky-Lite Instrumentation Platform. It is designed to read two 4–20 mA current-loop signals near the equipment or sensors being monitored, then communicate scaled measurements and alarms to a central Blinky-Lite control system.
+
 Current-loop sensors are widely used in industrial environments for measurements such as flow, pressure, level, and process temperature. Each channel includes a 24 V field-device supply connection and a dedicated current-sensor input, making it straightforward to connect compatible two-wire transmitters.
+
 Built around the Raspberry Pi Pico W / RP2040, the module uses 2.4 GHz Wi-Fi and MQTT publish/subscribe communication. This event-driven approach supports distributed deployments without wired data connections and enables Blinky-Lite to use device information for recording, notifications, visualisation, and machine-protection workflows.
 
 ### Key features
@@ -86,6 +88,7 @@ The firmware is released under the MIT License, giving users broad permission to
 ### Integration model
 
 The 4–20 mA Cube uses MQTT to publish scaled measurements and alarm events. This event-driven model avoids conventional polling and enables prompt control-system responses to changing process conditions.
+
 In a typical deployment, the device connects by Wi-Fi to the network and communicates through an MQTT broker. Blinky-Lite represents it as an integrated instrumentation node and can use its information for recording, display, notification, alarms, and machine-protection logic.
 
 ### Measurement, safety, and installation considerations
