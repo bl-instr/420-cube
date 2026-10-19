@@ -2,7 +2,10 @@
 
 **Two-channel, wireless current-loop acquisition for connecting industrial 4–20 mA sensors to the Blinky-Lite control system in their natural engineering units.**
 
-<img src="420-cube.png" alt="420-cube" width="800"/>
+| Enclosure | PCB |
+|-----------|-----|
+|<img src="420-cube.png" alt="420-cube" width="400"/>|<img src="420PCB.png" alt="420PCB" width="400"/>
+
 
 ## Overview
 
